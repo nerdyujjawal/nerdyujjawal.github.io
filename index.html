@@ -14,11 +14,24 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+<div class="cursor-glow"></div>
 
+<script>
+
+const glow = document.querySelector(".cursor-glow");
+
+document.addEventListener("mousemove",(e)=>{
+
+  glow.style.left = e.clientX + "px";
+  glow.style.top = e.clientY + "px";
+
+});
+
+</script>
 <body>
 
   <div class="noise"></div>
-
+  <div class="background"></div>
   <header>
     <div class="logo">UJJAWAL</div>
 
@@ -26,7 +39,7 @@
       <a href="#">Home</a>
       <a href="#">Projects</a>
       <a href="#">Thoughts</a>
-      <a href="#">Contact</a>
+      <a href="#">About</a>
     </nav>
   </header>
 
