@@ -5,63 +5,103 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Ujjawal</title>
+  <title>Gateway to Heaven</title>
 
   <link rel="stylesheet" href="style.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-<div class="cursor-glow"></div>
 
-<script>
-
-const glow = document.querySelector(".cursor-glow");
-
-document.addEventListener("mousemove",(e)=>{
-
-  glow.style.left = e.clientX + "px";
-  glow.style.top = e.clientY + "px";
-
-});
-
-</script>
 <body>
 
-  <div class="noise"></div>
   <div class="background"></div>
+  <div class="cursor-glow"></div>
+
+  <!-- NAVBAR -->
+
   <header>
-    <div class="logo">UJJAWAL</div>
+
+    <div class="logo">
+      GATEWAY TO HEAVEN
+    </div>
 
     <nav>
       <a href="#">Home</a>
-      <a href="#">Projects</a>
       <a href="#">Thoughts</a>
+      <a href="#">Dreams</a>
       <a href="#">About</a>
     </nav>
+
   </header>
 
-  <main>
+  <!-- HERO SECTION -->
 
-    <section class="hero">
+  <section class="hero">
 
-      <div class="scroll-section">
+    <!-- LEFT SIDE -->
 
-  <img
-    <img
-  src="images/luffy.jpg"
-  alt="Luffy"
-  class="luffy"
-/>
-  >
+    <div class="hero-left">
 
-</div>
+      <p class="tag">
+        PERSONAL SPACE • THOUGHTS • CREATIONS
+      </p>
 
-    </section>
+      <h1>
+        Gateway<br>
+        to Heaven.
+      </h1>
 
-  </main>
+      <p class="description">
+        Somewhere between silence and imagination,
+        this space slowly gathers thoughts, experiments,
+        unfinished dreams and fragments of creation.
+      </p>
+
+      <div class="buttons">
+
+        <button class="primary">
+          Enter
+        </button>
+
+        <button class="secondary">
+          About
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+
+    <div class="hero-right">
+
+      <img
+        src="images/luffy.jpg"
+        alt="Luffy"
+        class="luffy"
+      >
+
+    </div>
+
+  </section>
+
+  <!-- CURSOR EFFECT -->
+
+  <script>
+
+    const glow = document.querySelector(".cursor-glow");
+
+    document.addEventListener("mousemove",(e)=>{
+
+      glow.style.left = e.clientX + "px";
+      glow.style.top = e.clientY + "px";
+
+    });
+
+  </script>
 
 </body>
 
