@@ -20,8 +20,6 @@
   <div class="background"></div>
   <div class="cursor-glow"></div>
 
-  <!-- NAVBAR -->
-
   <header>
 
     <div class="logo">
@@ -30,18 +28,13 @@
 
     <nav>
       <a href="#">Home</a>
-      <a href="#">Thoughts</a>
-      <a href="#">Dreams</a>
+      <a href="assignments.html">Assignments</a>
       <a href="#">About</a>
     </nav>
 
   </header>
 
-  <!-- HERO SECTION -->
-
   <section class="hero">
-
-    <!-- LEFT SIDE -->
 
     <div class="hero-left">
 
@@ -62,9 +55,11 @@
 
       <div class="buttons">
 
-        <button class="primary">
-          Enter
-        </button>
+        <a href="assignments.html">
+          <button class="primary">
+            Enter
+          </button>
+        </a>
 
         <button class="secondary">
           About
@@ -74,27 +69,22 @@
 
     </div>
 
-    <!-- RIGHT SIDE -->
-
     <div class="hero-right">
 
       <img
         src="images/luffy.jpg"
         alt="Luffy"
-        class="luffy"
-      >
+        class="luffy">
 
     </div>
 
   </section>
 
-  <!-- CURSOR EFFECT -->
-
   <script>
 
     const glow = document.querySelector(".cursor-glow");
 
-    document.addEventListener("mousemove",(e)=>{
+    document.addEventListener("mousemove", (e) => {
 
       glow.style.left = e.clientX + "px";
       glow.style.top = e.clientY + "px";
