@@ -229,3 +229,83 @@ button:hover{
   }
 
 }
+/* ASSIGNMENTS PAGE */
+
+.portal{
+
+  min-height:100vh;
+
+  padding:140px 10%;
+
+}
+
+.portal h1{
+
+  text-align:center;
+
+  font-size:70px;
+
+  margin-bottom:20px;
+
+}
+
+.portal p{
+
+  text-align:center;
+
+  color:#9ca3af;
+
+  margin-bottom:60px;
+
+}
+
+.cards{
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(250px,1fr));
+
+  gap:30px;
+
+}
+
+.card{
+
+  background:
+  rgba(255,255,255,0.05);
+
+  border:
+  1px solid rgba(255,255,255,0.08);
+
+  backdrop-filter:blur(20px);
+
+  border-radius:20px;
+
+  padding:30px;
+
+  transition:0.4s;
+
+}
+
+.card:hover{
+
+  transform:translateY(-8px);
+
+}
+
+.card h2{
+
+  margin-bottom:20px;
+
+}
+
+.card a{
+
+  text-decoration:none;
+
+  color:#06b6d4;
+
+  font-weight:600;
+
+}
